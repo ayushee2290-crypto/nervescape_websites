@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main circle outline -->
+  <circle cx="100" cy="100" r="78" fill="none" stroke="url(#blueGradient)" stroke-width="8"/>
+  
+  <!-- Vertical center line -->
+  <line x1="100" y1="28" x2="100" y2="172" stroke="url(#blueGradient)" stroke-width="5"/>
+  
+  <!-- N letter on left side -->
+  <path d="M38 148 L38 52 L50 52 L50 105 L78 52 L90 52 L90 148 L78 148 L78 95 L50 148 Z" 
+        fill="url(#blueGradient)" stroke="none"/>
+  
+  <!-- A letter on right side -->
+  <path d="M110 148 L134 52 L166 148 L152 148 L146 125 L122 125 L116 148 Z" 
+        fill="url(#blueGradient)" stroke="none"/>
+  <!-- A inner triangle -->
+  <path d="M134 68 L126 112 L142 112 Z" fill="#fff"/>
+</svg>
