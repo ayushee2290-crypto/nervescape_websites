@@ -33,7 +33,7 @@ export default function CareersPage() {
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop"
             alt="Team Success"
             fill
             className="object-cover"
@@ -90,7 +90,7 @@ export default function CareersPage() {
             className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden mb-16 shadow-2xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
               alt="Team Unity - Hands Together"
               fill
               className="object-cover"
@@ -107,7 +107,7 @@ export default function CareersPage() {
           >
             <div className="absolute inset-0">
               <Image
-                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=2070&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                 alt="Diverse Team Collaboration"
                 fill
                 className="object-cover"

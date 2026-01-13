@@ -85,7 +85,7 @@ export default function AboutPage() {
       <section className="relative pt-24 pb-16">
         <div className="absolute inset-0 h-[400px]">
           <Image
-            src="https://static.wixstatic.com/media/f715c7cf8d6c4f4a8d719a58c9562aca.jpg/v1/fill/w_1920,h_417,al_c,q_85/f715c7cf8d6c4f4a8d719a58c9562aca.jpg"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
             alt="Building Exterior"
             fill
             className="object-cover"
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="relative rounded-2xl overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
                   alt="Business Team Meeting"
                   fill
                   className="object-cover"
@@ -192,12 +192,12 @@ export default function AboutPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
             alt="Digital Globe Technology"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-indigo-800/80 to-purple-900/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/85 to-indigo-900/90" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -240,7 +240,7 @@ export default function AboutPage() {
               className="relative h-[400px] rounded-2xl overflow-hidden"
             >
               <Image
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop"
                 alt="Global Technology Vision"
                 fill
                 className="object-cover"

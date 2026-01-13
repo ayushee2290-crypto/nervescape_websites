@@ -20,6 +20,16 @@ services:
     networks:
       - nervescape-network
 
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: nervescape-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token eyJhIjoiZjkxOWY2NDBjOGY2ZDIzMzYzN2Q4ZDk1MzY3YzQ2ZDYiLCJ0IjoiZmZkYWYyM2QtOThkMy00YzkxLWFkMjUtOGUwNjg1NDgyYjBkIiwicyI6IllUWXlOR1V5WmpNdE9USm1PUzAwWlRSakxXRm1ZV1V0TWpObVpUaG1PR1k1WXpneCJ9
+    networks:
+      - nervescape-network
+    depends_on:
+      - nervescape
+
 networks:
   nervescape-network:
     driver: bridge

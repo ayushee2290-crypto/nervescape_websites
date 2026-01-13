@@ -21,7 +21,7 @@ const slides = [
     title: 'Optimize',
     subtitle: 'Maximizing efficiency and performance.',
     description: 'Ensure optimal use of cloud resources, reducing costs and enhancing performance through automated processes and intelligent management.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
     color: 'from-blue-900/95',
   },
   {
@@ -29,7 +29,7 @@ const slides = [
     title: 'Secure',
     subtitle: 'Protecting your digital assets.',
     description: 'Implement robust security measures and governance frameworks to safeguard your infrastructure, ensuring compliance with industry standards and regulatory requirements.',
-    image: 'https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop',
     color: 'from-emerald-900/95',
   },
   {
@@ -37,7 +37,7 @@ const slides = [
     title: 'Innovate',
     subtitle: 'Driving technological advancement.',
     description: 'Leverage cutting-edge technologies and advanced cloud solutions to foster innovation, enabling businesses to stay competitive and ahead of the curve.',
-    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2065&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop',
     color: 'from-purple-900/95',
   },
 ];

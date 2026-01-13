@@ -1,25 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <defs>
-    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e40af"/>
-      <stop offset="50%" style="stop-color:#3b82f6"/>
-      <stop offset="100%" style="stop-color:#06b6d4"/>
-    </linearGradient>
-  </defs>
-  
   <!-- Main circle outline -->
-  <circle cx="100" cy="100" r="78" fill="none" stroke="url(#blueGradient)" stroke-width="8"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="currentColor" stroke-width="4"/>
   
-  <!-- Vertical center line -->
-  <line x1="100" y1="28" x2="100" y2="172" stroke="url(#blueGradient)" stroke-width="5"/>
+  <!-- Vertical center line extending through circle -->
+  <line x1="100" y1="15" x2="100" y2="185" stroke="currentColor" stroke-width="4"/>
   
-  <!-- N letter on left side -->
-  <path d="M38 148 L38 52 L50 52 L50 105 L78 52 L90 52 L90 148 L78 148 L78 95 L50 148 Z" 
-        fill="url(#blueGradient)" stroke="none"/>
+  <!-- N letter - left side (line art style) -->
+  <!-- N outer left vertical -->
+  <line x1="35" y1="55" x2="35" y2="145" stroke="currentColor" stroke-width="4"/>
+  <!-- N inner left vertical -->
+  <line x1="45" y1="55" x2="45" y2="145" stroke="currentColor" stroke-width="4"/>
+  <!-- N diagonal outer -->
+  <line x1="35" y1="55" x2="85" y2="145" stroke="currentColor" stroke-width="4"/>
+  <!-- N diagonal inner -->
+  <line x1="45" y1="55" x2="95" y2="145" stroke="currentColor" stroke-width="4"/>
+  <!-- N right vertical lines (shared with center) -->
+  <line x1="85" y1="55" x2="85" y2="145" stroke="currentColor" stroke-width="4"/>
+  <line x1="95" y1="55" x2="95" y2="145" stroke="currentColor" stroke-width="4"/>
   
-  <!-- A letter on right side -->
-  <path d="M110 148 L134 52 L166 148 L152 148 L146 125 L122 125 L116 148 Z" 
-        fill="url(#blueGradient)" stroke="none"/>
-  <!-- A inner triangle -->
-  <path d="M134 68 L126 112 L142 112 Z" fill="#fff"/>
+  <!-- A letter - right side (line art style) -->
+  <!-- A left leg outer -->
+  <line x1="105" y1="145" x2="135" y2="55" stroke="currentColor" stroke-width="4"/>
+  <!-- A left leg inner -->
+  <line x1="115" y1="145" x2="140" y2="55" stroke="currentColor" stroke-width="4"/>
+  <!-- A right leg outer -->
+  <line x1="165" y1="145" x2="135" y2="55" stroke="currentColor" stroke-width="4"/>
+  <!-- A right leg inner -->
+  <line x1="155" y1="145" x2="140" y2="55" stroke="currentColor" stroke-width="4"/>
+  <!-- A horizontal bar outer -->
+  <line x1="118" y1="110" x2="152" y2="110" stroke="currentColor" stroke-width="4"/>
+  <!-- A horizontal bar inner -->
+  <line x1="122" y1="100" x2="148" y2="100" stroke="currentColor" stroke-width="4"/>
 </svg>
