@@ -48,6 +48,20 @@ const services = [
     description: 'Cloud Operations (CloudOPS) is the practice of managing and optimizing cloud-based infrastructure and applications to ensure they operate smoothly, securely, and efficiently. It encompasses the continuous monitoring, maintenance, and improvement of cloud-based infrastructure, applications, and services.',
     image: 'https://static.wixstatic.com/media/e77fd1ddd12e4652b471fe86db43b889.jpg/v1/crop/x_983,y_0,w_1310,h_1310/fill/w_728,h_728,al_c,q_85/Data%20Cloud.jpg',
   },
+  {
+    icon: Rocket,
+    slug: 'ai-automation',
+    title: 'AI Automation',
+    description: 'AI Automation brings intelligent automation to your operations by combining machine learning, RPA, and intelligent orchestration to automate repetitive tasks and derive insights at scale.',
+    image: 'https://images.unsplash.com/photo-1558888400-8b28f0d9d5a3?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    icon: Cloud,
+    slug: 'digital-transformation',
+    title: 'Digital Transformation',
+    description: 'Digital Transformation helps organizations modernize technology, processes, and culture to deliver better customer experiences, innovate faster, and operate with greater agility.',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop',
+  },
 ];
 
 export default function ServicesPage() {
