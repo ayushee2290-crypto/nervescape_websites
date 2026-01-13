@@ -156,19 +156,19 @@ export default function CareersPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
-            alt="Modern Workspace"
+            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop"
+            alt="Premium Business Meeting"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-50/95 via-white/92 to-blue-50/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/40 via-blue-900/30 to-indigo-900/40" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-gray-100"
+            className="bg-white/95 backdrop-blur-md rounded-2xl p-8 md:p-12 shadow-2xl border border-white/20"
           >
             <h3 className="text-xl font-bold text-gray-900 mb-4">IMPORTANT NOTE:</h3>
             <p className="text-gray-600 leading-relaxed mb-6">

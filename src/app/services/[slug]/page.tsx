@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Cloud, Database, BarChart3, Rocket, Settings, Activity, ArrowRight, ArrowLeft, CheckCircle2, Quote, Zap, Shield, TrendingUp, Award } from 'lucide-react';
+import { Cloud, Database, BarChart3, Rocket, Settings, Activity, ArrowRight, ArrowLeft, CheckCircle2, Quote, Zap, Shield, TrendingUp, Award, Clock, Users, Server, Eye, Gauge, DollarSign, Lock, Scale, RefreshCw, Target, LineChart, Layers, GitBranch, Workflow, Cpu, HardDrive, AlertTriangle, PieChart, MonitorCheck, Cog, Globe, Infinity } from 'lucide-react';
 
 const servicesData: Record<string, {
   icon: typeof Cloud;
@@ -16,7 +16,7 @@ const servicesData: Record<string, {
   processImage: string;
   ctaImage: string;
   features: { title: string; description: string }[];
-  benefits: string[];
+  benefits: { text: string; icon: typeof Cloud }[];
   stats: { value: string; label: string }[];
   process: { step: string; title: string; description: string }[];
   quote: { text: string; author: string; role: string };
@@ -36,7 +36,13 @@ const servicesData: Record<string, {
       { title: 'Data Quality Monitoring', description: 'Implement comprehensive data quality checks and monitoring to ensure data accuracy and reliability.' },
       { title: 'Version Control', description: 'Track changes and maintain version control for all your data assets and transformations.' },
     ],
-    benefits: ['60% faster time-to-insight', 'Improved data quality and reliability', 'Reduced operational overhead', 'Enhanced team collaboration', 'Scalable data infrastructure'],
+    benefits: [
+      { text: '60% faster time-to-insight', icon: Clock },
+      { text: 'Improved data quality and reliability', icon: Target },
+      { text: 'Reduced operational overhead', icon: DollarSign },
+      { text: 'Enhanced team collaboration', icon: Users },
+      { text: 'Scalable data infrastructure', icon: Scale },
+    ],
     stats: [{ value: '60%', label: 'Faster Insights' }, { value: '99.9%', label: 'Data Accuracy' }, { value: '40%', label: 'Cost Reduction' }],
     process: [
       { step: '01', title: 'Assessment', description: 'We analyze your current data landscape and identify optimization opportunities.' },
@@ -61,7 +67,13 @@ const servicesData: Record<string, {
       { title: 'Container Orchestration', description: 'Deploy and manage containerized applications with Kubernetes and Docker.' },
       { title: 'Automated Testing', description: 'Integrate automated testing at every stage for quality assurance.' },
     ],
-    benefits: ['10x faster deployment frequency', 'Improved deployment reliability', 'Enhanced team collaboration', 'Reduced time-to-market', 'Continuous improvement culture'],
+    benefits: [
+      { text: '10x faster deployment frequency', icon: Rocket },
+      { text: 'Improved deployment reliability', icon: Shield },
+      { text: 'Enhanced team collaboration', icon: Users },
+      { text: 'Reduced time-to-market', icon: Clock },
+      { text: 'Continuous improvement culture', icon: RefreshCw },
+    ],
     stats: [{ value: '10x', label: 'Faster Deployments' }, { value: '95%', label: 'Success Rate' }, { value: '50%', label: 'Less Downtime' }],
     process: [
       { step: '01', title: 'Evaluate', description: 'Assess your current development and operations workflows.' },
@@ -86,7 +98,13 @@ const servicesData: Record<string, {
       { title: 'Database Migration', description: 'Seamlessly migrate databases across platforms with zero downtime.' },
       { title: 'Security & Compliance', description: 'Ensure your data meets industry security standards and compliance requirements.' },
     ],
-    benefits: ['99.99% database uptime', 'Reduced data loss risk', 'Enhanced data security', 'Seamless scalability', 'Optimized storage costs'],
+    benefits: [
+      { text: '99.99% database uptime', icon: Server },
+      { text: 'Reduced data loss risk', icon: Shield },
+      { text: 'Enhanced data security', icon: Lock },
+      { text: 'Seamless scalability', icon: Scale },
+      { text: 'Optimized storage costs', icon: DollarSign },
+    ],
     stats: [{ value: '99.99%', label: 'Uptime SLA' }, { value: '3x', label: 'Faster Queries' }, { value: '45%', label: 'Cost Savings' }],
     process: [
       { step: '01', title: 'Audit', description: 'Comprehensive audit of your database infrastructure.' },
@@ -111,7 +129,13 @@ const servicesData: Record<string, {
       { title: 'Intelligent Alerting', description: 'AI-powered alerting that reduces noise and highlights critical issues.' },
       { title: 'Custom Dashboards', description: 'Build powerful dashboards tailored to your team needs.' },
     ],
-    benefits: ['70% faster incident resolution', 'Proactive issue detection', 'Improved system reliability', 'Data-driven decisions', 'Enhanced user experience'],
+    benefits: [
+      { text: '70% faster incident resolution', icon: Clock },
+      { text: 'Proactive issue detection', icon: Eye },
+      { text: 'Improved system reliability', icon: Server },
+      { text: 'Data-driven decisions', icon: LineChart },
+      { text: 'Enhanced user experience', icon: Users },
+    ],
     stats: [{ value: '70%', label: 'Faster Resolution' }, { value: '24/7', label: 'Monitoring' }, { value: '99.9%', label: 'Accuracy' }],
     process: [
       { step: '01', title: 'Instrument', description: 'Deploy monitoring agents and instrumentation across your stack.' },
@@ -136,7 +160,13 @@ const servicesData: Record<string, {
       { title: 'Auto-scaling', description: 'Intelligent scaling that responds to demand in real-time.' },
       { title: 'Security Management', description: 'Comprehensive application security and vulnerability management.' },
     ],
-    benefits: ['99.9% application uptime', 'Reduced operational complexity', 'Enhanced security posture', 'Improved scalability', 'Lower total cost of ownership'],
+    benefits: [
+      { text: '99.9% application uptime', icon: Server },
+      { text: 'Reduced operational complexity', icon: Layers },
+      { text: 'Enhanced security posture', icon: Shield },
+      { text: 'Improved scalability', icon: Scale },
+      { text: 'Lower total cost of ownership', icon: DollarSign },
+    ],
     stats: [{ value: '99.9%', label: 'Uptime' }, { value: '35%', label: 'Cost Reduction' }, { value: '2x', label: 'Performance' }],
     process: [
       { step: '01', title: 'Discover', description: 'Map your application portfolio and dependencies.' },
@@ -161,7 +191,13 @@ const servicesData: Record<string, {
       { title: 'Security & Compliance', description: 'Enterprise-grade security with continuous compliance monitoring.' },
       { title: 'Infrastructure Automation', description: 'Automated provisioning and configuration management.' },
     ],
-    benefits: ['40% cloud cost reduction', 'Enhanced security posture', 'Improved operational efficiency', 'Seamless scalability', 'Business continuity assurance'],
+    benefits: [
+      { text: '40% cloud cost reduction', icon: DollarSign },
+      { text: 'Enhanced security posture', icon: Shield },
+      { text: 'Improved operational efficiency', icon: Gauge },
+      { text: 'Seamless scalability', icon: Scale },
+      { text: 'Business continuity assurance', icon: Infinity },
+    ],
     stats: [{ value: '40%', label: 'Cost Savings' }, { value: '99.99%', label: 'Availability' }, { value: '24/7', label: 'Support' }],
     process: [
       { step: '01', title: 'Assess', description: 'Evaluate your current cloud infrastructure and spending.' },
@@ -297,14 +333,17 @@ export default function ServiceDetailPage() {
                 {service.description}
               </p>
               <ul className="space-y-4">
-                {service.benefits.slice(0, 3).map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    </div>
-                    <span className="text-gray-700">{benefit}</span>
-                  </li>
-                ))}
+                {service.benefits.slice(0, 3).map((benefit, index) => {
+                  const BenefitIcon = benefit.icon;
+                  return (
+                    <li key={index} className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                        <BenefitIcon className="w-4 h-4 text-gray-700" />
+                      </div>
+                      <span className="text-gray-700">{benefit.text}</span>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
             
@@ -483,21 +522,24 @@ export default function ServiceDetailPage() {
           </motion.div>
 
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {service.benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle2 className="w-6 h-6 text-emerald-600" />
-                </div>
-                <p className="text-gray-700 font-medium">{benefit}</p>
-              </motion.div>
-            ))}
+            {service.benefits.map((benefit, index) => {
+              const BenefitIcon = benefit.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mx-auto mb-4">
+                    <BenefitIcon className="w-6 h-6 text-gray-700" />
+                  </div>
+                  <p className="text-gray-700 font-medium">{benefit.text}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

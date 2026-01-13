@@ -1,34 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Main circle outline -->
-  <circle cx="100" cy="100" r="85" fill="none" stroke="currentColor" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60">
+  <defs>
+    <linearGradient id="nGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="100%" style="stop-color:#06B6D4"/>
+    </linearGradient>
+  </defs>
   
-  <!-- Vertical center line extending through circle -->
-  <line x1="100" y1="15" x2="100" y2="185" stroke="currentColor" stroke-width="4"/>
+  <!-- Stylized N Icon with wave/curve -->
+  <path d="M5 50V10h8c0 0 0 18 0 22l20-22h10v40h-8V28L15 50H5z" fill="url(#nGradient)"/>
   
-  <!-- N letter - left side (line art style) -->
-  <!-- N outer left vertical -->
-  <line x1="35" y1="55" x2="35" y2="145" stroke="currentColor" stroke-width="4"/>
-  <!-- N inner left vertical -->
-  <line x1="45" y1="55" x2="45" y2="145" stroke="currentColor" stroke-width="4"/>
-  <!-- N diagonal outer -->
-  <line x1="35" y1="55" x2="85" y2="145" stroke="currentColor" stroke-width="4"/>
-  <!-- N diagonal inner -->
-  <line x1="45" y1="55" x2="95" y2="145" stroke="currentColor" stroke-width="4"/>
-  <!-- N right vertical lines (shared with center) -->
-  <line x1="85" y1="55" x2="85" y2="145" stroke="currentColor" stroke-width="4"/>
-  <line x1="95" y1="55" x2="95" y2="145" stroke="currentColor" stroke-width="4"/>
+  <!-- Nervescape text -->
+  <text x="52" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#1F2937">Nervescape</text>
   
-  <!-- A letter - right side (line art style) -->
-  <!-- A left leg outer -->
-  <line x1="105" y1="145" x2="135" y2="55" stroke="currentColor" stroke-width="4"/>
-  <!-- A left leg inner -->
-  <line x1="115" y1="145" x2="140" y2="55" stroke="currentColor" stroke-width="4"/>
-  <!-- A right leg outer -->
-  <line x1="165" y1="145" x2="135" y2="55" stroke="currentColor" stroke-width="4"/>
-  <!-- A right leg inner -->
-  <line x1="155" y1="145" x2="140" y2="55" stroke="currentColor" stroke-width="4"/>
-  <!-- A horizontal bar outer -->
-  <line x1="118" y1="110" x2="152" y2="110" stroke="currentColor" stroke-width="4"/>
-  <!-- A horizontal bar inner -->
-  <line x1="122" y1="100" x2="148" y2="100" stroke="currentColor" stroke-width="4"/>
+  <!-- ANALYTICS text -->
+  <text x="52" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" letter-spacing="3.5" fill="#9CA3AF">ANALYTICS</text>
 </svg>
