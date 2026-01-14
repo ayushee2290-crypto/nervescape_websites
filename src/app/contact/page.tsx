@@ -79,14 +79,12 @@ export default function ContactPage() {
       <section className="relative pt-24 pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
-            alt="Premium Office"
+            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop"
+            alt="Contact Us"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-emerald-900/90 to-teal-900/95" />
-          <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-900/90 to-slate-900/95" />
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
@@ -102,18 +100,18 @@ export default function ContactPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8"
             >
-              <Sparkles className="w-4 h-4 text-emerald-400" />
-              <span className="text-sm font-medium text-white/90">Let us Build Something Great Together</span>
+              <Sparkles className="w-4 h-4 text-cyan-400" />
+              <span className="text-sm font-medium text-white">Let us Build Something Great Together</span>
             </motion.div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight drop-shadow-lg">
               Get in Touch with
-              <span className="block bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+              <span className="block text-cyan-400 drop-shadow-lg">
                 Our Expert Team
               </span>
             </h1>
             
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto mb-10 drop-shadow-md">
               Transform your cloud infrastructure with our premium managed services. Our experts are ready to help you optimize, secure, and innovate.
             </p>
 
@@ -124,10 +122,10 @@ export default function ContactPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full"
                 >
                   <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                  <span className="text-white/80 text-sm font-medium">{benefit}</span>
+                  <span className="text-white text-sm font-medium">{benefit}</span>
                 </motion.div>
               ))}
             </div>

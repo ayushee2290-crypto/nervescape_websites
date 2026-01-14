@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   description: 'Nervescape Analytics is a multicloud managed service provider offering top-tier, custom-tailored solutions. Optimize, Secure, Innovate your cloud infrastructure.',
   keywords: 'CloudOps, DevOps, DataOps, AppOps, DBOps, Cloud Management, Multicloud, Managed Services',
   authors: [{ name: 'Nervescape Analytics LLP' }],
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: 'Nervescape Analytics | Premium Multicloud Managed Services',
     description: 'Experience unmatched premium cloud managed services with Nervescape. Optimize, Secure, Innovate.',
@@ -24,6 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">{children}</main>

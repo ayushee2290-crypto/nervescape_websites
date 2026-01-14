@@ -44,7 +44,7 @@ const teamMembers = [
     name: 'Neeraj Vishen',
     role: 'Founder & CEO',
     description: 'Visionary leader with 15+ years in cloud and enterprise technology.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
+    image: '/team/ceo.jpg',
   },
   {
     name: 'Ayushee P',
@@ -63,17 +63,17 @@ const teamMembers = [
 const caseStudies = [
   {
     title: 'Blind Spots Be Gone: How Nervescape Analytics Gave an E-Commerce Giant X-Ray Vision into Their IT Infrastructure',
-    image: 'https://static.wixstatic.com/media/309d105833834f94a863c3c88cb6e00e.jpg/v1/fill/w_630,h_414,al_c,q_80/TV%20Screens.jpg',
+    image: 'https://images.unsplash.com/photo-1558403194-611308249627?q=80&w=1000&auto=format&fit=crop',
     href: '/blog',
   },
   {
     title: 'Streamlining Data Operations for Agile Decision-Making: A Case Study with Nervescape Analytics LLP',
-    image: 'https://static.wixstatic.com/media/dce453_e59dc0822b4d4a2384551347ae0449b7~mv2.jpg/v1/fill/w_630,h_414,al_c,q_80/pexels-goumbik-590022.jpg',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop',
     href: '/blog',
   },
   {
     title: "E-commerce Agility: How Nervescape's DevOps Solutions Fueled Growth for a Rising Star",
-    image: 'https://static.wixstatic.com/media/dce453_f9f0a65c6c1c44daa3b3835ce4b78217~mv2.webp/v1/fill/w_630,h_414,al_c,q_80/dce453_ff23b7c49ec94114972c1ef11f11a98b~mv2.webp',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop',
     href: '/blog',
   },
 ];

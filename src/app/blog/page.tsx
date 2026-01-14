@@ -9,7 +9,7 @@ const blogPosts = [
   {
     title: 'The Future of Cloud Operations: Trends to Watch in 2024',
     excerpt: 'Explore the latest trends shaping cloud operations, from AI-driven automation to sustainable computing practices.',
-    image: 'https://static.wixstatic.com/media/e77fd1ddd12e4652b471fe86db43b889.jpg/v1/crop/x_983,y_0,w_1310,h_1310/fill/w_728,h_728,al_c,q_85/Data%20Cloud.jpg',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1000&auto=format&fit=crop',
     author: 'Nervescape Team',
     date: 'January 15, 2024',
     readTime: '5 min read',
@@ -18,7 +18,7 @@ const blogPosts = [
   {
     title: 'Best Practices for Implementing DataOps in Your Organization',
     excerpt: 'Learn how to successfully implement DataOps practices to streamline your data management workflows.',
-    image: 'https://static.wixstatic.com/media/8cd0b216d6dd4d52bd46d3afbb8cf020.jpg/v1/crop/x_493,y_0,w_1280,h_1280/fill/w_728,h_728,al_c,q_85/8cd0b216d6dd4d52bd46d3afbb8cf020.jpg',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
     author: 'Nervescape Team',
     date: 'January 10, 2024',
     readTime: '7 min read',
@@ -27,7 +27,7 @@ const blogPosts = [
   {
     title: 'DevOps vs. Traditional IT: Why the Shift Matters',
     excerpt: 'Understanding the key differences between DevOps and traditional IT operations and why businesses are making the switch.',
-    image: 'https://static.wixstatic.com/media/11062b_9aeb82c30e9742bcadc79b3dc8eb9fdb~mv2.jpeg/v1/crop/x_1313,y_0,w_3375,h_3375/fill/w_728,h_728,al_c,q_85/Data%20Processing.jpeg',
+    image: 'https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1000&auto=format&fit=crop',
     author: 'Nervescape Team',
     date: 'January 5, 2024',
     readTime: '6 min read',
@@ -36,7 +36,7 @@ const blogPosts = [
   {
     title: 'Monitoring and Observability: A Complete Guide',
     excerpt: 'Everything you need to know about implementing effective monitoring and observability in modern IT systems.',
-    image: 'https://static.wixstatic.com/media/a3cb7bfa753c4b8cb7b06cf26783cef2.jpg/v1/crop/x_1260,y_0,w_3240,h_3240/fill/w_728,h_728,al_c,q_85/Monitoring%20Room.jpg',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop',
     author: 'Nervescape Team',
     date: 'December 28, 2023',
     readTime: '8 min read',
@@ -45,7 +45,7 @@ const blogPosts = [
   {
     title: 'Database Operations: Ensuring High Availability',
     excerpt: 'Strategies and best practices for maintaining high availability in your database infrastructure.',
-    image: 'https://static.wixstatic.com/media/dce453_fd1096f402664093b5cf9107ec37851e~mv2.jpg/v1/crop/x_0,y_324,w_1272,h_1272/fill/w_728,h_728,al_c,q_85/list-428312_1920.jpg',
+    image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1000&auto=format&fit=crop',
     author: 'Nervescape Team',
     date: 'December 20, 2023',
     readTime: '6 min read',
@@ -54,7 +54,7 @@ const blogPosts = [
   {
     title: 'Application Management in the Age of Microservices',
     excerpt: 'How AppOps practices are evolving to meet the challenges of microservices architecture.',
-    image: 'https://static.wixstatic.com/media/dce453_59e41aa66fcb43d0b88296c3a353c06d~mv2.jpg/v1/crop/x_762,y_0,w_3385,h_3384/fill/w_728,h_728,al_c,q_85/pexels-pixabay-209726.jpg',
+    image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop',
     author: 'Nervescape Team',
     date: 'December 15, 2023',
     readTime: '5 min read',
@@ -65,20 +65,33 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Hero Section with Background Image */}
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop"
+            alt="Blog Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/85 to-slate-800/80" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-slate-900/30" />
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
               Blog & Insights
             </h1>
-            <div className="w-24 h-1 bg-gray-900 mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-white mx-auto mb-8" />
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Stay updated with the latest trends, best practices, and insights in cloud operations and data management.
             </p>
           </motion.div>

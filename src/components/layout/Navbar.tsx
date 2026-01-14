@@ -49,22 +49,22 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3 group">
-              <div className="w-12 h-12 relative">
-                <Image
-                  src="/logo.svg"
-                  alt="Nervescape Analytics Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="hidden sm:block">
-                <span className="font-display font-bold text-xl text-gray-900">
-                  Nervescape
-                </span>
-                <span className="text-xs block text-gray-500">
-                  Analytics
-                </span>
+            <Link href="/" className="flex items-center group">
+              <div className="flex items-center">
+                <div className="bg-white rounded-sm p-0.5">
+                  <Image
+                    src="/logo-icon.png"
+                    alt="Nervescape Logo"
+                    width={40}
+                    height={52}
+                    className="object-contain mix-blend-multiply"
+                    priority
+                  />
+                </div>
+                <div className="ml-2 flex flex-col">
+                  <span className="text-xl font-bold text-gray-900 leading-tight">Nervescape</span>
+                  <span className="text-[10px] font-medium text-gray-500 tracking-[0.2em] uppercase">Analytics</span>
+                </div>
               </div>
             </Link>
 

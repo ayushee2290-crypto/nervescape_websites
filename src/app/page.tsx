@@ -21,24 +21,24 @@ const slides = [
     title: 'Optimize',
     subtitle: 'Maximizing efficiency and performance.',
     description: 'Ensure optimal use of cloud resources, reducing costs and enhancing performance through automated processes and intelligent management.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
-    color: 'from-blue-900/95',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop',
+    color: 'from-slate-900/95',
   },
   {
     icon: Shield,
     title: 'Secure',
     subtitle: 'Protecting your digital assets.',
     description: 'Implement robust security measures and governance frameworks to safeguard your infrastructure, ensuring compliance with industry standards and regulatory requirements.',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop',
-    color: 'from-emerald-900/95',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2940&auto=format&fit=crop',
+    color: 'from-slate-900/95',
   },
   {
     icon: Lightbulb,
     title: 'Innovate',
     subtitle: 'Driving technological advancement.',
     description: 'Leverage cutting-edge technologies and advanced cloud solutions to foster innovation, enabling businesses to stay competitive and ahead of the curve.',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop',
-    color: 'from-purple-900/95',
+    image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2948&auto=format&fit=crop',
+    color: 'from-slate-900/95',
   },
 ];
 
@@ -52,37 +52,37 @@ const services = [
   {
     title: 'DataOps',
     description: 'Streamline data management with automated pipelines and real-time integration.',
-    image: 'https://static.wixstatic.com/media/8cd0b216d6dd4d52bd46d3afbb8cf020.jpg/v1/fill/w_728,h_728,al_c,q_85/8cd0b216d6dd4d52bd46d3afbb8cf020.jpg',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
     href: '/services/dataops',
   },
   {
     title: 'DevOps',
     description: 'Accelerate development with CI/CD automation and infrastructure as code.',
-    image: 'https://static.wixstatic.com/media/11062b_9aeb82c30e9742bcadc79b3dc8eb9fdb~mv2.jpeg/v1/fill/w_728,h_728,al_c,q_85/Data%20Processing.jpeg',
+    image: 'https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1000&auto=format&fit=crop',
     href: '/services/devops',
   },
   {
     title: 'AppOps',
     description: 'Comprehensive application lifecycle management and optimization services.',
-    image: 'https://static.wixstatic.com/media/11062b_c567795db2214629b5de847016de542f~mv2.jpeg/v1/fill/w_728,h_728,al_c,q_85/11062b_c567795db2214629b5de847016de542f~mv2.jpeg',
+    image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop',
     href: '/services/appops',
   },
   {
     title: 'DBOps',
     description: 'Database operations and management for optimal performance and reliability.',
-    image: 'https://static.wixstatic.com/media/dce453_ff196d4181c743f9a1880101a64a7fd8~mv2.jpg/v1/fill/w_728,h_728,al_c,q_85/circle-5090539_1920.jpg',
+    image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1000&auto=format&fit=crop',
     href: '/services/dbops',
   },
   {
     title: 'CloudOps',
     description: 'Optimize cloud infrastructure for performance, security, and cost efficiency.',
-    image: 'https://static.wixstatic.com/media/e77fd1ddd12e4652b471fe86db43b889.jpg/v1/fill/w_728,h_728,al_c,q_85/Data%20Cloud.jpg',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1000&auto=format&fit=crop',
     href: '/services/cloudops',
   },
   {
     title: 'Observability',
     description: 'End-to-end monitoring and observability for complete infrastructure visibility.',
-    image: 'https://static.wixstatic.com/media/dce453_f9f0a65c6c1c44daa3b3835ce4b78217~mv2.webp/v1/fill/w_728,h_728,al_c,q_80/dce453_f9f0a65c6c1c44daa3b3835ce4b78217~mv2.webp',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
     href: '/services/observability',
   },
 ];
@@ -91,17 +91,17 @@ const commitmentFeatures = [
   {
     title: 'Governance',
     description: 'Strong governance frameworks to ensure compliance and risk management',
-    image: 'https://static.wixstatic.com/media/dce453_2f73d625e51c49ad8c300f111f2e6ef9~mv2.jpg/v1/fill/w_720,h_480,al_c,q_80/dce453_2f73d625e51c49ad8c300f111f2e6ef9~mv2.jpg',
+    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000&auto=format&fit=crop',
   },
   {
     title: 'Compliance',
     description: 'Adhering to the highest standards of security and regulatory compliance',
-    image: 'https://static.wixstatic.com/media/dce453_ff196d4181c743f9a1880101a64a7fd8~mv2.jpg/v1/fill/w_930,h_620,al_c,q_85/circle-5090539_1920.jpg',
+    image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1000&auto=format&fit=crop',
   },
   {
     title: '24/7 Support',
     description: 'Round-the-clock support from certified experts',
-    image: 'https://static.wixstatic.com/media/dce453_070f3c6adb4c4ae390330eca1ad3e153~mv2.jpg/v1/fill/w_930,h_620,al_c,q_85/call-center-1015274_1920.jpg',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop',
   },
 ];
 
@@ -109,19 +109,19 @@ const caseStudies = [
   {
     title: 'Streamlining Data Operations for Agile Decision-Making',
     excerpt: 'How we helped a Fortune 500 company reduce data processing time by 60%',
-    image: 'https://static.wixstatic.com/media/dce453_e59dc0822b4d4a2384551347ae0449b7~mv2.jpg/v1/fill/w_630,h_414,al_c,q_80/pexels-goumbik-590022.jpg',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop',
     href: '/blog',
   },
   {
     title: 'Orchestrating Your Cloud Journey to Excellence',
     excerpt: 'A comprehensive guide to multicloud strategy implementation',
-    image: 'https://static.wixstatic.com/media/a4dc102389e14b338563ee9c1b9c8c5f.jpg/v1/fill/w_630,h_414,al_c,q_80/Office%20Building.jpg',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop',
     href: '/blog',
   },
   {
     title: "E-commerce Agility with DevOps Solutions",
     excerpt: 'How DevOps practices fueled 300% growth for a rising e-commerce star',
-    image: 'https://static.wixstatic.com/media/dce453_f9f0a65c6c1c44daa3b3835ce4b78217~mv2.webp/v1/fill/w_630,h_414,al_c,q_80/dce453_ff23b7c49ec94114972c1ef11f11a98b~mv2.webp',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop',
     href: '/blog',
   },
 ];
@@ -160,25 +160,28 @@ export default function HomePage() {
       {/* Hero Slider Section */}
       <section className="relative h-screen overflow-hidden">
         {/* Background Images */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.7 }}
-            className="absolute inset-0"
+        {slides.map((slide, index) => (
+          <div
+            key={slide.title}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-100 z-0' : 'opacity-0 z-0'
+            }`}
           >
-            <Image
-              src={slides[currentSlide].image}
-              alt={slides[currentSlide].title}
-              fill
-              className="object-cover"
-              priority
+            {/* Premium Background Image */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[10000ms]"
+              style={{ 
+                backgroundImage: `url(${slide.image})`,
+                transform: index === currentSlide ? 'scale(1.1)' : 'scale(1.05)'
+              }}
             />
-            <div className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].color} via-gray-900/80 to-gray-900/60`} />
-          </motion.div>
-        </AnimatePresence>
+            {/* Premium multi-layer overlay for classy look */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/80 to-slate-900/60" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/30" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-cyan-900/20 via-transparent to-transparent" />
+          </div>
+        ))}
 
         {/* Slide Content */}
         <div className="relative z-10 h-full flex items-center">

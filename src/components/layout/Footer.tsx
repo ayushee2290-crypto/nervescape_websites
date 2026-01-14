@@ -122,20 +122,23 @@ export default function Footer() {
             {/* Logo & Description - spans 2 columns on larger screens */}
             <div className="col-span-2">
               {/* Logo with Text */}
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-14 h-14 relative">
-                  <Image
-                    src="/logo.svg"
-                    alt="Nervescape Analytics Logo"
-                    fill
-                    className="object-contain"
-                  />
+              <div className="mb-4">
+                <div className="flex items-center">
+                  <div className="bg-gray-100 rounded-sm p-0.5">
+                    <Image
+                      src="/logo-icon.png"
+                      alt="Nervescape Logo"
+                      width={48}
+                      height={62}
+                      className="object-contain mix-blend-multiply"
+                    />
+                  </div>
+                  <div className="ml-3 flex flex-col">
+                    <span className="text-2xl font-bold text-gray-900 leading-tight">Nervescape</span>
+                    <span className="text-xs font-medium text-gray-500 tracking-[0.2em] uppercase">Analytics</span>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">Nervescape</h3>
-                  <p className="text-xs text-blue-600 font-medium tracking-wider">ANALYTICS</p>
-                  <p className="text-[10px] text-gray-500">Optimize. Secure. Innovate.</p>
-                </div>
+                <p className="text-[11px] text-gray-500 mt-3 ml-1">Optimize. Secure. Innovate.</p>
               </div>
               
               {/* Description */}
